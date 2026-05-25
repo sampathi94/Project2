@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKUNI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 class="logo">SHAKUNI</h1>
+        <p class="tagline">Stack It. Track It. Win It.</p>
+
+        <!-- Country Selector -->
+        <div class="country-selector">
+            <select id="country" onchange="selectCountry(this.value)">
+                <option value="">-- Choose Country --</option>
+                <option value="australia">Australia</option>
+                <option value="united-states">United States</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="new-zealand">New Zealand</option>
+                <option value="canada">Canada</option>
+                <option value="south-africa">South Africa</option>
+                <option value="ireland">Ireland</option>
+                <option value="india">India</option>
+                <option value="singapore">Singapore</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Auth Buttons (Hidden by default) -->
+        <div class="auth-buttons" id="authButtons">
+            <button class="btn-guest" onclick="goToGuest()">
+                <i class="fas fa-user-clock"></i> Guest
+            </button>
+            <button class="btn-login" onclick="goToLogin()">
+                <i class="fas fa-user"></i> Login
+            </button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
